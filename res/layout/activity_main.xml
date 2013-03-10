@@ -1,0 +1,152 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+
+    <TextView
+        android:id="@+id/yValTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="14dp"
+        android:layout_marginTop="62dp"
+        android:text="@string/not_available" />
+
+    <TextView
+        android:id="@+id/linearAccelerationTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/yValTV"
+        android:layout_alignBottom="@+id/yValTV"
+        android:layout_alignParentLeft="true"
+        android:text="@string/linear_acceleration" />
+
+    <TextView
+        android:id="@+id/xValTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/linearAccelerationTV"
+        android:layout_alignLeft="@+id/yValTV"
+        android:text="@string/not_available" />
+
+    <TextView
+        android:id="@+id/zValTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/yValTV"
+        android:layout_below="@+id/yValTV"
+        android:text="@string/not_available" />
+
+    <TextView
+        android:id="@+id/yTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/linearAccelerationTV"
+        android:layout_alignBottom="@+id/linearAccelerationTV"
+        android:layout_alignRight="@+id/xTV"
+        android:text="@string/y" />
+
+    <TextView
+        android:id="@+id/zTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/zValTV"
+        android:layout_alignBottom="@+id/zValTV"
+        android:layout_alignRight="@+id/yTV"
+        android:text="@string/z" />
+
+    <TextView
+        android:id="@+id/azimuthTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/zTV"
+        android:layout_marginTop="34dp"
+        android:text="@string/azimuth" />
+
+    <TextView
+        android:id="@+id/azimuthValTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/azimuthTV"
+        android:layout_alignBottom="@+id/azimuthTV"
+        android:layout_alignRight="@+id/zValTV"
+        android:text="@string/not_available" />
+
+    <TextView
+        android:id="@+id/lightTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/azimuthTV"
+        android:layout_marginTop="28dp"
+        android:text="@string/light" />
+
+    <TextView
+        android:id="@+id/lightValTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/lightTV"
+        android:layout_alignBottom="@+id/lightTV"
+        android:layout_alignRight="@+id/azimuthValTV"
+        android:text="@string/not_available" />
+
+    <TextView
+        android:id="@+id/pressureTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:text="@string/pressure" />
+
+    <TextView
+        android:id="@+id/pressureValTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/pressureTV"
+        android:layout_alignBottom="@+id/pressureTV"
+        android:layout_alignRight="@+id/lightValTV"
+        android:text="@string/not_available" />
+
+    <Button
+        android:id="@+id/qrScan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/pressureTV"
+        android:layout_marginTop="34dp"
+        android:text="@string/qr_scan" />
+
+    <EditText
+        android:id="@+id/generateET"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/qrScan"
+        android:layout_marginTop="18dp"
+        android:ems="10"
+        android:hint="@string/enter_text_to_generate" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/qrGenerate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/generateET"
+        android:text="@string/qr_generate" />
+
+    <TextView
+        android:id="@+id/xTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/yTV"
+        android:layout_centerHorizontal="true"
+        android:text="@string/x" />
+
+</RelativeLayout>
